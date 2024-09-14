@@ -2,6 +2,7 @@
 {
   imports = [
     ./aliases.nix
+    ./tmux.nix
   ];
   programs.zsh = {
     enable = true;

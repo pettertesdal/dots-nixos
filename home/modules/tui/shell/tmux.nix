@@ -2,7 +2,7 @@
 {
   programs.tmux = {
     enable = true;
-    keyMode = true;
+    keyMode = "vi";
     shortcut = "a";
     mouse=true;
   };

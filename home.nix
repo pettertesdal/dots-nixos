@@ -10,6 +10,7 @@
     ./home/modules/tui/shell
     ./home/modules/gui/screenshot
     ./home/modules/scripts/notetaking
+    ./home/modules/scripts/tmux
   ];
   home.username = "tesdap";
   home.homeDirectory = "/home/tesdap";
