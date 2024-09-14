@@ -6,7 +6,7 @@ in
   stylix = {
     enable = true;
     image = themePath + "/background.png";
-    stylix.base16Scheme = themePath + "/colors.yaml";
+    base16Scheme = themePath + "/colors.yaml";
 
     fonts = {
       monospace = {
