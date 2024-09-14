@@ -33,6 +33,7 @@
   programs.nixvim.enable = true;
 
 
+  programs.bash.enable = true;
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     # here is some command line tools I use frequently
@@ -89,11 +90,22 @@
     };
   };
 
+
   # alacritty - a cross-platform, GPU-accelerated terminal emulator
   programs.alacritty = {
     enable = true;
     # custom settings
     settings = {
+      font = {
+        normal.family = "FantasqueSansM Nerd Font";
+        size = 11;
+        bold = { style = "Bold"; };
+      };
+      window.padding = {
+        x = 2;
+        y = 2;
+      };
+      shell.program = "${pkgs.zsh}/bin/zsh"; 
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
     };
