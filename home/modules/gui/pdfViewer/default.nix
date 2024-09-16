@@ -1,6 +1,5 @@
-{ ... }:
 {
-  programs.sioyek {
+  programs.sioyek = {
     enable = true;
     bindings = {
       "move_up" = "k";
