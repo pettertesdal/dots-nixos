@@ -9,6 +9,7 @@
     ./home/modules/tui/nixvim
     ./home/modules/tui/shell
     ./home/modules/gui/screenshot
+    ./home/modules/gui/pdfViewer
     ./home/modules/scripts/notetaking
     ./home/modules/scripts/tmux
   ];
