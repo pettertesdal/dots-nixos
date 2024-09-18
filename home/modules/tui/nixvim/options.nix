@@ -1,5 +1,6 @@
 {
   programs.nixvim = {
+    enableMan = true;
     globals = {
       # Disable useless providers
       loaded_ruby_provider = 0; # Ruby

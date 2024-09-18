@@ -76,7 +76,7 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  environment.variables.EDITOR = "vim";
+  environment.variables.EDITOR = "nvim";
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
