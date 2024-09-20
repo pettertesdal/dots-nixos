@@ -8,6 +8,7 @@
     ./home/modules/system/fileManager
     ./home/modules/tui/nixvim
     ./home/modules/tui/shell
+    ./home/modules/tui/notes
     ./home/modules/gui
     ./home/modules/scripts/notetaking
     ./home/modules/scripts/tmux
