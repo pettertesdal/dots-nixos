@@ -28,7 +28,7 @@
         lucky = "zk list --quiet --format full --sort random --limit 1";
       };
       format.markdown = {
-        link-format = [[{{filename}}]];
+        link-format = "[[{{filename}}]]";
       };
       lsp.diagnostic = {
         wiki-title = "hint";

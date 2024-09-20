@@ -13,6 +13,11 @@
   networking.hostName = "penguin-B"; # Define your hostname.
 
 
+  # Bluetooth
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+
+  services.blueman.enable = true;
 
   stylix.enable = true;
   stylix.image = ./home/themes/ayu-dark/background.png;

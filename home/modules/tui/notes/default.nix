@@ -1,5 +1,5 @@
 {
   imports = [
-    /zk.nix
+    ./zk.nix
   ];
 }

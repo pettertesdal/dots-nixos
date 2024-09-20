@@ -14,6 +14,7 @@
     ./telescope.nix
     ./treesitter.nix
     ./vimtex.nix
+    ./zk-nvim.nix
   ];
 
   programs.nixvim = {
