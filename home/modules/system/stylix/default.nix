@@ -1,12 +1,13 @@
 { config, lib, pkgs, ... }:
 let
-  themePath = "./../../../themes/gruvbox-dark/"
+  themePath = "~/.dots/home/themes/gruvbox-dark";
 in
 {
   stylix = {
     enable = true;
+    polarity = "dark";
     image = themePath + "/background.png";
-    base16Scheme = themePath + "/colors.yaml";
+    base16Scheme = "${themePath}/colors.yaml";
 
     fonts = {
       monospace = {
