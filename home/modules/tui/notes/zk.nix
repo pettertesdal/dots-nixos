@@ -3,6 +3,9 @@
   programs.zk = {
     enable = true;
     settings = {
+      notebook = {
+        dir = "~/documents/notes";
+      };
       note = {
         language = "en";
         default-title = "untitled";
@@ -12,10 +15,6 @@
         id-charset = "alphanum";
         id-length = 4;
         id-case = "lower";
-      };
-      tool = {
-        editor = "nvim";
-        shell = "/etc/profile/per-user/tesdap/bin/zsh";
       };
       alias = {
         # Edit the last modified note.
@@ -27,15 +26,26 @@
         # Show a random note.
         lucky = "zk list --quiet --format full --sort random --limit 1";
       };
-      format.markdown = {
-        link-format = "[[{{filename}}]]";
-      };
       lsp.diagnostic = {
         wiki-title = "hint";
         dead-link = "error";
       };
+      format.markdown = {
+        link-format = "[[{{filename}}]]";
+      };
+      group.litterature = {
+        paths = ["litterature"];
+        note = {
+          extension = "md";
+          template = "litterature.md";
+        };
+      };
       extra = {
         author = "Petter Tesdal";
+      };
+      tool = {
+        editor = "nvim";
+        shell = "/run/current-system/sw/bin/zsh";
       };
     };
   };
