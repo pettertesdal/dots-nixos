@@ -27,7 +27,7 @@ in
           dots_center = true;
           outer_color = "rgba(0, 0, 0, 0)";
           inner_color = "rgba(0, 0, 0, 0.2)";
-          font_color = "${base08}";
+          font_color = base08;
           fade_on_empty = false;
           rounding = -1;
           check_color = "rgb(204, 136, 34)";

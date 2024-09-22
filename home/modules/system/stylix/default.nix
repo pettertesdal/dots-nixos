@@ -11,13 +11,16 @@ in
 
     fonts = {
       monospace = {
-        name = "ProggyClean CE Nerd Font";
+        name = "FantasqueSansM Nerd Font";
+        package = pkgs.fantasque-sans-mono;
       };
       serif = {
-        name = "ProggyClean CE Nerd Font";
+        name = "FantasqueSansM Nerd Font";
+        package = pkgs.fantasque-sans-mono;
       };
       sansSerif = {
-        name = "ProggyClean CE Nerd Font";
+        name = "FantasqueSansM Nerd Font";
+        package = pkgs.fantasque-sans-mono;
       };
       sizes = {
         terminal = 18;
