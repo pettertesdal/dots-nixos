@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./home/modules/system/wm/hyprland.nix
     ./home/modules/system/fonts
     ./home/modules/system/waybar
     ./home/modules/system/utils

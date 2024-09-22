@@ -56,6 +56,12 @@
   # Setting up hyprland
   programs.hyprland.enable = true;
 
+
+  security = {
+    pam.services.hyprlock = {};
+    polkit.enable = true;
+  };
+
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   users.users.tesdap.shell = pkgs.zsh;
