@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 let
-  themePath = "./../../../themes/ayu-dark"
+  themePath = "./../../../themes/gruvbox-dark/"
 in
 {
   stylix = {
