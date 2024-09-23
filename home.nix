@@ -53,8 +53,8 @@
     # archives
 
     # utils
-
     # networking tools
+
     socat # replacement of openbsd-netcat
     nmap # A utility for network discovery and security auditing
     httpie

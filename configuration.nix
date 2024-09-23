@@ -13,6 +13,7 @@
 
   networking.hostName = "penguin-B"; # Define your hostname.
 
+  # Music
 
   # Bluetooth
   hardware.bluetooth.enable = true; # enables support for Bluetooth
