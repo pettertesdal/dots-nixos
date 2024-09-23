@@ -14,6 +14,15 @@
   networking.hostName = "penguin-B"; # Define your hostname.
 
   # Music
+  services.mpd = {
+    enable = true;
+    extraConfig = ''
+      audio_output {
+              type "pipewire"
+              name "PipeWire Sound Server"
+      }'';
+    startWhenNeeded = true; # systemd feature: only start MPD service upon connection to its socket
+  };
 
   # Bluetooth
   hardware.bluetooth.enable = true; # enables support for Bluetooth
@@ -72,6 +81,9 @@
     dunst
     libnotify
     git
+    mpd
+    ncmpcpp
+    mpc-cli
     kitty
     rofi-wayland
     firefox
