@@ -9,5 +9,8 @@
         name "My PipeWire Output"
       }
     '';
-  }
+  };
+  programs.ncmpcpp = {
+    enable = true;
+  };
 }
