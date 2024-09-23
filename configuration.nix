@@ -16,6 +16,7 @@
   # Music
   services.mpd = {
     enable = true;
+    musicDirectory = "/home/tesdap/media/music";
     extraConfig = ''
       audio_output {
               type "pipewire"
