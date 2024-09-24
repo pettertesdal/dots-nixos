@@ -8,7 +8,7 @@
     ''
       [
         {
-          paths = ./snippets/;
+          paths = ./snippets;
         }
       ]
     '';
