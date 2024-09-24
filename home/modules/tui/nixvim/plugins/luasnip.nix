@@ -13,4 +13,15 @@
           }
     ];
   };
+  programs.nixvim.keymaps = [
+    {
+      mode = "n";
+      key = "<Tab>";
+      action = "luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'";
+      options = {
+        silent = true;
+        expr = true;
+      }
+    };
+  ];
 }
