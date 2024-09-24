@@ -3,6 +3,28 @@ let
   inherit (config.lib.stylix.colors.withHashtag) base05 base04 base08;
 in
 {
+  services.hypridle = {
+    enable = true;
+    settings = {
+      general = {
+        after_sleep_cmd = "hyprctl dispatch dpms on";
+        ignore_dbus_inhibit = false;
+        lock_cmd = "hyprlock";
+      };
+
+      listener = [
+        {
+          timeout = 300;
+          on-timeout = "hyprlock";
+        }
+        {
+          timeout = 1200;
+          on-timeout = "hyprctl dispatch dpms off";
+          on-resume = "hyprctl dispatch dpms on";
+        }
+      ];
+    };
+  };
   programs.hyprlock = {
     enable = true;
     settings = {
@@ -12,7 +34,7 @@ in
       background = [
         {
           path = "~/.dots/home/themes/gruvbox-dark/background.png";
-          blur_passes = 0;
+          blur_passes = 2;
           blur_size = 8;
           contrast = 1;
         }

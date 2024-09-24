@@ -14,16 +14,6 @@
   networking.hostName = "penguin-B"; # Define your hostname.
 
   # Music
-  services.mpd = {
-    enable = true;
-    musicDirectory = "/home/tesdap/media/music";
-    extraConfig = ''
-      audio_output {
-              type "pipewire"
-              name "PipeWire Sound Server"
-      }'';
-    startWhenNeeded = true; # systemd feature: only start MPD service upon connection to its socket
-  };
 
   # Bluetooth
   hardware.bluetooth.enable = true; # enables support for Bluetooth
@@ -79,10 +69,9 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     waybar
     eww
-    dunst
+    mako
     libnotify
     git
-    mpd
     ncmpcpp
     mpc-cli
     kitty
@@ -95,8 +84,10 @@
     curl
   ];
 
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+    MPD_HOST = "/run/user/1000/mpd/socket";
+  };
   environment.variables.EDITOR = "nvim";
 
   nixpkgs.config.permittedInsecurePackages = [
