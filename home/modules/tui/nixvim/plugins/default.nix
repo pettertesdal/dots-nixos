@@ -6,6 +6,7 @@
     ./harpoon.nix
     ./lsp.nix
     ./lualine.nix
+    ./luasnip.nix
     #./markdown-preview.nix
     #./neorg.nix
     ./neo-tree.nix
