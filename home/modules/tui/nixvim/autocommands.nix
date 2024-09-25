@@ -23,5 +23,12 @@
       ];
       command = "setlocal spell spelllang=en";
     }
+    {
+      event = "FileType";
+      pattern = [
+        "nix"
+      ];
+      command = "set shiftwidth=2|set tabstop=2";
+    }
   ];
 }
