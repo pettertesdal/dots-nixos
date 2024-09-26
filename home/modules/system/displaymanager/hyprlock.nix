@@ -3,6 +3,7 @@ let
   inherit (config.lib.stylix.colors.withHashtag) base05 base04 base08;
 in
 {
+
   services.hypridle = {
     enable = true;
     settings = {
@@ -47,9 +48,9 @@ in
           dots_size = 0.2; # Scale of input-field height, 0.2 - 0.8
           dots_spacing = 0.35; # Scale of dots' absolute size, 0.0 - 1.0
           dots_center = true;
-          outer_color = "rgba(0, 0, 0, 0)";
-          inner_color = "rgba(0, 0, 0, 0.2)";
-          font_color = base08;
+          outer_color = "rgba(255, 255, 255, 0)";
+          inner_color = "rgba(${base08}, 1)";
+          font_color = "rgba(255, 255, 255, 0.2)";
           fade_on_empty = false;
           rounding = -1;
           check_color = "rgb(204, 136, 34)";
@@ -65,7 +66,7 @@ in
         {
           monitor = "";
           text = ''cmd[update:1000] echo "$(date +"%A, %B %d")"'';
-          color = "${base08}";
+          color = base08;
           font_size = 22;
           position = "0, 300";
           halign = "center";

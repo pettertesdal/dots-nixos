@@ -113,6 +113,13 @@
         x = 2;
         y = 2;
       };
+      keyboard.bindings = [
+        {
+          key = "T";
+          mods = "Control | Shift";
+          command = "tmux_attach_current_sessions";
+        }
+      ];
       shell.program = "${pkgs.zsh}/bin/zsh"; 
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
