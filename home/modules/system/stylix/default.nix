@@ -11,15 +11,15 @@ in
 
     fonts = {
       monospace = {
-        name = "FantasqueSansM Nerd Font";
+        name = "FantasqueSansM mono";
         package = pkgs.fantasque-sans-mono;
       };
       serif = {
-        name = "FantasqueSansM Nerd Font";
+        name = "FantasqueSansM mono";
         package = pkgs.fantasque-sans-mono;
       };
       sansSerif = {
-        name = "FantasqueSansM Nerd Font";
+        name = "FantasqueSansM mono";
         package = pkgs.fantasque-sans-mono;
       };
       sizes = {

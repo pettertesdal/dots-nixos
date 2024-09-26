@@ -6,5 +6,6 @@ in
   services.mako = {
     enable = true;
     borderColor = lib.mkForce "#${base05}";
+    defaultTimeout = 30000;
   };
 }
