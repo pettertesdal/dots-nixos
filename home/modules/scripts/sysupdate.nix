@@ -9,13 +9,10 @@
 
       # Early return if no changes were detected
       if git ls-files '*.nix' | xargs git diff --quiet; then
-      echo "No changes detected, exiting."
-      popd
-      exit 0
+        echo "No changes detected, exiting."
+        popd
+        exit 0
       fi
-
-      # Shows your changes
-      git diff -U0 '*.nix'
 
       echo "NixOS Rebuilding..."
 
@@ -27,6 +24,7 @@
 
       # Commit all changes with the generation metadata
       git commit -am "$current"
+      git push
 
       # Back to where you were
       popd
