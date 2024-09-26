@@ -6,7 +6,7 @@
     ./keymappings.nix
     ./options.nix
     ./plugins
-    #./todo.nix
+    ./todo.nix
   ];
 
   home.shellAliases.v = "nvim";

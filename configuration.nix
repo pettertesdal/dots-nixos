@@ -110,6 +110,13 @@
     #jack.enable = true;
   };
 
+  # Automatic garbage collect
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
+
   nix = {
     package = pkgs.nixFlakes;
     extraOptions = ''

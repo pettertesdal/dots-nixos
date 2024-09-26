@@ -66,7 +66,7 @@
           # better indenting
           "<TAB>" = ">gv";
           "<S-TAB>" = "<gv";
-	  "<leader>y" = "\"+y";
+      	  "<leader>y" = "\"+y";
 
           # move selected line / block of text in visual mode
           #"K" = ":m '<-2<CR>gv=gv";
