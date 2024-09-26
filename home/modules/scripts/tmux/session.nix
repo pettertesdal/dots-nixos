@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = let
-    specialisation = pkgs.writeShellScriptBin "tmux_attach_current_sessions" ''
+    specialisation = pkgs.writeShellScriptBin "tms" ''
 
       function tmux_sessions() {
         tmuxinator list | sed -n '2p' | tr -s ' ' | tr ' ' '\n'

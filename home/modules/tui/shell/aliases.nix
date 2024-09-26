@@ -1,5 +1,6 @@
 {
   home.shellAliases = {
-    sysup = "sudo nixos-rebuild switch --flake ~/.dots/";
+    sysupdate = "sudo nixos-rebuild switch --flake ~/.dots/";
+    systest = "sudo nixos-rebuild test --flake ~/.dots/";
   };
 }
