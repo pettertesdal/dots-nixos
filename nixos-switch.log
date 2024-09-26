@@ -1,17 +1,20 @@
 warning: Git tree '/home/tesdap/.dots' is dirty
 building the system configuration...
 warning: Git tree '/home/tesdap/.dots' is dirty
-these 4 derivations will be built:
-  /nix/store/4as1xv9xlrh0lhcw0yfr07znzf05bgdr-unit-home-manager-tesdap.service.drv
-  /nix/store/810hqngmd55c8hq58vkkihwna29blazc-system-units.drv
-  /nix/store/d1c1qdrm1mwb4ajksc74vl5mxnq0s7yg-etc.drv
-  /nix/store/rmmzw7g7xk6rpcs3cv4452hp6nky3chf-nixos-system-penguin-B-24.11.20240906.574d1ea.drv
-building '/nix/store/4as1xv9xlrh0lhcw0yfr07znzf05bgdr-unit-home-manager-tesdap.service.drv'...
-building '/nix/store/810hqngmd55c8hq58vkkihwna29blazc-system-units.drv'...
-building '/nix/store/d1c1qdrm1mwb4ajksc74vl5mxnq0s7yg-etc.drv'...
-building '/nix/store/rmmzw7g7xk6rpcs3cv4452hp6nky3chf-nixos-system-penguin-B-24.11.20240906.574d1ea.drv'...
+trace: evaluation warning: Passing a attribute set containing name, icon.icon, extraConfig for `home-manager.users.tesdap.programs.nixvim.plugins.lualine.settings.sections.lualine_x."[definition 1-entry 2]"' is deprecated, use (attribute set of anything) or raw lua code instead. Definitions: 
+- In `/nix/store/7j08fq81pzh0jkf2i7pizg0njh4w7c9s-source/plugins/statuslines/lualine.nix':
+    {
+      color = {
+        fg = "#ffffff";
+      };
+      icon = "";
+    ...
+
+trace: evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/4h21fd95fpglb8wpf87b5kxkx1w38nm8-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
+trace: evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/4h21fd95fpglb8wpf87b5kxkx1w38nm8-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
+trace: evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/4h21fd95fpglb8wpf87b5kxkx1w38nm8-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
+trace: evaluation warning: The option `services.xserver.layout' defined in `/nix/store/4h21fd95fpglb8wpf87b5kxkx1w38nm8-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
 activating the configuration...
 setting up /etc...
 reloading user units for tesdap...
 restarting sysinit-reactivation.target
-restarting the following units: home-manager-tesdap.service

@@ -2,12 +2,12 @@
   imports = [
     ./barbar.nix
     ./comment.nix
-    #./floaterm.nix
+    ./floaterm.nix
     ./harpoon.nix
     ./lsp.nix
     ./lualine.nix
     ./luasnip.nix
-    #./markdown-preview.nix
+    ./markdown-preview.nix
     #./neorg.nix
     ./neo-tree.nix
     ./startify.nix
