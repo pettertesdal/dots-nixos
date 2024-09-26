@@ -12,6 +12,7 @@
     ./home/modules/tui/notes
     ./home/modules/tui/music
     ./home/modules/gui
+    ./home/modules/scripts/sysupdate.nix
     ./home/modules/scripts/notetaking
     ./home/modules/scripts/tmux
   ];
