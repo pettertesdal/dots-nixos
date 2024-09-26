@@ -30,7 +30,7 @@
       popd
 
       # Notify all OK!
-      /usr/bin/notify-send "NixOS Rebuilt OK!" --icon=software-update-available
+      notify-send "NixOS Rebuilt OK! 󰅠 " --icon=software-update-available
 
     '';
   in [
