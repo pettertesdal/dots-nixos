@@ -20,7 +20,7 @@
       echo "NixOS Rebuilding..."
 
       # Rebuild, output simplified errors, log tracebacks
-      sudo nixos-rebuild switch >nixos-switch.log 2>&1 || (cat nixos-switch.log | grep --color error && exit 1)
+      sudo nixos-rebuild switch --flake ~/.dots/ >nixos-switch.log 2>&1 || (cat nixos-switch.log | grep --color error && exit 1)
 
       # Get current generation metadata
       current=$(nixos-rebuild list-generations | grep current | awk '{print $1, $2, $3}')
