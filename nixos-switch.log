@@ -1,20 +1,12 @@
 warning: Git tree '/home/tesdap/.dots' is dirty
 building the system configuration...
 warning: Git tree '/home/tesdap/.dots' is dirty
-trace: evaluation warning: Passing a attribute set containing name, icon.icon, extraConfig for `home-manager.users.tesdap.programs.nixvim.plugins.lualine.settings.sections.lualine_x."[definition 1-entry 2]"' is deprecated, use (attribute set of anything) or raw lua code instead. Definitions: 
-- In `/nix/store/7j08fq81pzh0jkf2i7pizg0njh4w7c9s-source/plugins/statuslines/lualine.nix':
-    {
-      color = {
-        fg = "#ffffff";
-      };
-      icon = "";
-    ...
-
-trace: evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/3alznlxlaw2mzzq8afmgv7ckkyaab038-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
-trace: evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/3alznlxlaw2mzzq8afmgv7ckkyaab038-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
-trace: evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/3alznlxlaw2mzzq8afmgv7ckkyaab038-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
-trace: evaluation warning: The option `services.xserver.layout' defined in `/nix/store/3alznlxlaw2mzzq8afmgv7ckkyaab038-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
+this derivation will be built:
+  /nix/store/00zjjbfqbn9kyzf9knlz4gzilnd723dz-nixos-system-penguin-B-24.11.20240906.574d1ea.drv
+building '/nix/store/00zjjbfqbn9kyzf9knlz4gzilnd723dz-nixos-system-penguin-B-24.11.20240906.574d1ea.drv'...
 activating the configuration...
 setting up /etc...
 reloading user units for tesdap...
 restarting sysinit-reactivation.target
+restarting the following units: home-manager-tesdap.service
+the following new units were started: NetworkManager-dispatcher.service

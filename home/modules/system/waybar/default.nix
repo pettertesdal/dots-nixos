@@ -114,7 +114,7 @@ in
           max-length = 6;
         };
         "custom/nix" = {
-          format = "󱄅 ";
+          format = "(󱄅 )";
           tooltip = false;
         };
         "clock#time" = {
