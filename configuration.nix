@@ -71,7 +71,6 @@
     eww
 
     # Notification
-    mako 
     libnotify
     git
     ncmpcpp

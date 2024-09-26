@@ -5,6 +5,6 @@ in
 {
   services.mako = {
     enable = true;
-    borderColor = "#${base05}FF";
+    borderColor = "#${base05}";
   };
 }

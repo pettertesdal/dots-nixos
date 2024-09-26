@@ -7,6 +7,7 @@
     ./home/modules/system/waybar
     ./home/modules/system/utils
     ./home/modules/system/fileManager
+    # ./home/modules/system/notification
     ./home/modules/tui/nixvim
     ./home/modules/tui/shell
     ./home/modules/tui/notes
