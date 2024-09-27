@@ -15,5 +15,5 @@ directory_name=$(basename "$symlink_target")
 # Output the target of the symlink
 echo "$directory_name"
 
-pkill -RTMIN+10 waybar  # Emit the signal (adjust number based on your config)
+pkill -RTMIN+4 waybar  # Emit the signal (adjust number based on your config)
 

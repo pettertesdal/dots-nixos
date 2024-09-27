@@ -5,9 +5,9 @@
 
       settings = {
         view_method = "zathura";
-	
-	compiler_method = "latexmk";
-	log_verbose = 1;
+
+        compiler_method = "latexmk";
+        log_verbose = 1;
         quickfix_enabled = true;
         quickfix_open_on_warning = false;
 
@@ -45,11 +45,11 @@
       #    function ()
       #    print("Callback triggered for folding settings")
       #      vim.o.foldmethod = "expr"
-    #vim.o.foldexpr = 'vimtex#fold#level(v:lnum)'
-    #vim.o.foldtext = 'vimtex#fold#text()'
-    #      end
-    #    '';
-     # }
+      #vim.o.foldexpr = 'vimtex#fold#level(v:lnum)'
+      #vim.o.foldtext = 'vimtex#fold#text()'
+      #      end
+      #    '';
+      # }
 
       # Compile on initialization
       {

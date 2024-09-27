@@ -70,6 +70,7 @@
     waybar
     eww
 
+    (texlive.combine { inherit (texlive) scheme-full tcolorbox ifmtarg framed paralist titlesec enumitem; })
     # Notification
     libnotify
     git

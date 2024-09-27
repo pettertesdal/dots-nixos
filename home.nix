@@ -48,7 +48,6 @@
     neofetch
 
     # Textdocuments
-    (texlive.combine { inherit (texlive) scheme-full xifthen ifmtarg framed paralist titlesec enumitem; })
   
     zathura # Pdf viewer
 

@@ -1,6 +1,6 @@
 {
   imports = [
-    ./barbar.nix
+    # ./barbar.nix
     ./comment.nix
     ./floaterm.nix
     ./harpoon.nix
