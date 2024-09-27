@@ -28,6 +28,7 @@ in
           "custom/wifi"
         ];
         modules-right = [
+          "custom/current"
           "custom/media"
           "pulseaudio"
           "backlight"
@@ -155,6 +156,11 @@ in
           on-click = "~/.config/waybar/scripts/network-menu.sh";
           min-length = 7;
           max-length = 7;
+        };
+        "custom/current" = {
+          exec = "~/.dots/home/modules/system/waybar/scripts/current.sh";
+          interval = 3;
+          format = "{}";
         };
 
         "custom/media" = {
