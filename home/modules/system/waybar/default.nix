@@ -1,12 +1,11 @@
 { config, pkgs, ... }:
 let
-  inherit (config.lib.stylix.colors) base00 base01 base02 base03 base04 base05 base06 base08;
+  inherit (config.lib.stylix.colors) base00 base01 base02 base03 base04 base05 base06 base08 base0A;
 in
   {
 
   stylix.targets.waybar.enable = false;
-  programs.waybar = {
-    enable = true;
+  programs.waybar = { enable = true;
     settings = {
       mainBar = {
         layer = "top";
@@ -69,7 +68,8 @@ in
             "(.*)tesdap@penguin-B" = "  tesdap@penguin-B";
             "(.*) — Mozilla Firefox" = "<span foreground='#f38ba8'>󰈹</span>  $1";
             "(.*)Mozilla Firefox" = "<span foreground='#f38ba8'>󰈹</span>  Firefox";
-            "nvim" = "<span foreground='#89b4fa'></span>";
+            "nvim" = "<span foreground='#89b4fa'>{}</span>";
+            "tms" = "<span foreground='#89b4fa'> </span>";
             "(.*)Spotify" = "<span foreground='#a6e3a1'></span>  Spotify";
             "(.*)Spotify Premium" = "<span foreground='#a6e3a1'></span>  Spotify Premium";
             "Discord" = "<span foreground='#89b4fa'></span>  Discord";
@@ -293,9 +293,13 @@ in
         border: solid;
         border-width: 1.5px;
         border-radius: 7px;
-        border-color: #${base03}
+        border-color: #${base05}
       }
 
+      #workspaces {
+        background: #${base00};
+        border-bottom: 3px solid #${base05};
+      }
       #workspaces button {
         color: #${base01};
       }
@@ -303,6 +307,9 @@ in
       #workspaces button.active {
         color: @active-fg;
         background: @active-bg;
+      }
+      #window {
+        /* background: #${base01}; */
       }
       '';
   };
