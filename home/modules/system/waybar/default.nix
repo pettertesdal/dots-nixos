@@ -155,7 +155,7 @@ in
         "custom/current" = {
           exec = "~/.dots/home/modules/system/waybar/scripts/current.sh";
           interval = 0;
-          signal = 12;
+          signal = 10;
           format = "{}";
         };
 
