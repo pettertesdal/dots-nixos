@@ -288,7 +288,8 @@ in
 
 
       window#waybar {
-        background: @background;
+        background: #${base00};
+        border-bottom: 3px solid #${base05};
       }
 
 
@@ -304,14 +305,17 @@ in
 
       #workspaces {
         background: #${base00};
-        border-bottom: 3px solid #${base05};
       }
       #workspaces button {
-        color: #${base01};
+        color: #${base03};
+        padding: 1;
       }
 
+      #workspaces button.empty{
+        color: #${base01};
+      }
       #workspaces button.active {
-        color: @active-fg;
+        color: white;
         background: @active-bg;
       }
       #window {
