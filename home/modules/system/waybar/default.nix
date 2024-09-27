@@ -210,9 +210,7 @@ in
           tooltip = false;
           on-click = "~/.config/waybar/scripts/logoutlaunch.sh 2";
           on-click-right = "~/.config/waybar/scripts/logoutlaunch.sh 1";
-          interval  = 86400;
-        };
-        "custom/paddl" = {
+          interval  = 86400; }; "custom/paddl" = {
           format = " ";
           tooltip = false;
         };
@@ -280,6 +278,12 @@ in
     };
     style = ''
       * {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        font-family: "FantasqueSansM Nerd Font";
+        font-size: 10px;
+        min-height: 0;
       }
 
 

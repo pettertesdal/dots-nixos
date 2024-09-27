@@ -55,6 +55,7 @@
 
     # music
     mpd
+    spotify
     # utils
     hypridle
     # networking tools
