@@ -159,7 +159,8 @@ in
         };
         "custom/current" = {
           exec = "~/.dots/home/modules/system/waybar/scripts/current.sh";
-          interval = 3;
+          interval = 0;
+          signal = 12;
           format = "{}";
         };
 
@@ -315,7 +316,9 @@ in
         background: @active-bg;
       }
       #window {
-        /* background: #${base01}; */
+      }
+      #current {
+        background: #${base00};
       }
       '';
   };

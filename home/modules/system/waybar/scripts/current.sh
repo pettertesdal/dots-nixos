@@ -1,16 +1,12 @@
 #!/usr/bin/env zsh
 # Check if a symlink path is provided
-if [ -z "$1" ]; then
-  echo "Usage: $0 <symlink_path>"
-  exit 1
-fi
 
 # Get the target of the symlink
-symlink_target=$(readlink "$1")
+symlink_target=$(readlink ~/documents/university/current_course)
 
 # Check if the symlink is valid and exists
 if [ -z "$symlink_target" ]; then
-  echo "Error: '$1' is not a valid symlink or does not exist."
+  echo "Error: is not a valid symlink or does not exist."
   exit 1
 fi
 

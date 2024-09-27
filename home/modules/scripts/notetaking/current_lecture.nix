@@ -9,6 +9,7 @@
         cd ..
 
         ln -sfn courses/$CURRENT_COURSE current_course
+        pkill -RTMIN+10 waybar  # Emit the signal (adjust number based on your config)
     '';
   in [
     specialisation
