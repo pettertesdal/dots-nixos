@@ -18,19 +18,14 @@ in
         reload_style_on_change = true;
         modules-left = ["hyprland/workspaces" "hyprland/window"];
         modules-center = [
-          "custom/cpuinfo"
           "memory"
           "cpu"
           "custom/nix"
           "clock#time"
           "clock#date"
-          "custom/wi"
-          "custom/wifi"
         ];
         modules-right = [
           "custom/current"
-          "custom/media"
-          "pulseaudio"
           "backlight"
           "battery"
           "custom/power"
