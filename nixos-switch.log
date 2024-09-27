@@ -10,10 +10,10 @@ trace: evaluation warning: Passing a attribute set containing name, icon.icon, e
       icon = "";
     ...
 
-trace: evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/dvxnx8a2rqcc24fcc5fv3p2pwbq0xkkn-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
-trace: evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/dvxnx8a2rqcc24fcc5fv3p2pwbq0xkkn-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
-trace: evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/dvxnx8a2rqcc24fcc5fv3p2pwbq0xkkn-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
-trace: evaluation warning: The option `services.xserver.layout' defined in `/nix/store/dvxnx8a2rqcc24fcc5fv3p2pwbq0xkkn-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
+trace: evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/zh0wv5a0whrl8paq99n8gvfgvc6zkarq-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
+trace: evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/zh0wv5a0whrl8paq99n8gvfgvc6zkarq-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
+trace: evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/zh0wv5a0whrl8paq99n8gvfgvc6zkarq-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
+trace: evaluation warning: The option `services.xserver.layout' defined in `/nix/store/zh0wv5a0whrl8paq99n8gvfgvc6zkarq-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
 activating the configuration...
 setting up /etc...
 reloading user units for tesdap...

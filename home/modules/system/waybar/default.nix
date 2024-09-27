@@ -289,7 +289,7 @@ in
 
       window#waybar {
         background: #${base00};
-        border-bottom: 3px solid #${base05};
+        border-bottom: 1px solid #${base05};
       }
 
 
@@ -304,7 +304,6 @@ in
       }
 
       #workspaces {
-        background: #${base00};
       }
       #workspaces button {
         color: #${base03};
