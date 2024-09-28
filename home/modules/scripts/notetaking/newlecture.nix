@@ -43,7 +43,37 @@
         else
           echo "master.tex not found!"
         fi
+      elif [ "$CREATION_TYPE" == "course" ]; then
+        # Use rofi to prompt the user for a course name
+        course_name=$(rofi -dmenu -p "Enter course name:")
+        AFFILIATION=$(echo -e "none\nhvl\nuib\nhvl-uib\nfmc" | rofi -dmenu -no-custom -p "Select affiliation")
+
+        # Create the course directory
+        course_dir="courses/$course_name"
+        mkdir -p "$course_dir"
+        echo "Created course directory: $course_dir"
+        
+        # Change into the course directory
+        cd "$course_dir"
+        
+        if [ "$AFFILIATION" == "hvl-uib" ]; then
+          cp ../../.templates/courses/hvl.png ./logo1.png
+          cp ../../.templates/courses/uib.png ./logo2.png
+        else
+          echo "$AFFILIATION"
+          echo "no affiliation"
+        fi
+
+        # Create a symlink to ../../.templates/custom.sty
+        ln -s ../../.templates/custom.sty ./
+        echo "Created symlink to custom.sty"
+
+        # Copy the master.tex file from the template folder
+        cp ../../.templates/courses/master.tex .
+        echo "Copied master.tex from template"
       else
+        cd courses
+        
       echo "Not implemented"
       fi
       '';
