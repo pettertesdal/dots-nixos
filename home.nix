@@ -56,6 +56,7 @@
 
     # music
     mpd
+    cava
     # utils
     hypridle
     # networking tools
@@ -79,6 +80,7 @@
     glow # markdown previewer in terminal
 
     # system tools
+
   ];
 
   # basic configuration of git, please change to your own

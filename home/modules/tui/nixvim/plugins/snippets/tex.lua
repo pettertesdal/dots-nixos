@@ -18,9 +18,13 @@ return {
       i(2),
       t({"", "\\end{definition}"})
     }),
-	s("equa", {t("\\begin{equation}"), i(1), t("end{equation}")}),
-	s("stat", {t("\\begin{statement}"), i(1), t("end{statement}")})
+	s("equa", {t({"\\begin{equation}", ""}), i(1), t("end{equation}")}),
+	s("stat", {t({"\\begin{statement}", ""}), i(1), t("end{statement}")}),
+	s("item", {t({"\\begin{itemize}", ""}), i(1), t("end{itemize}")})
 }, {
 	s("sct", { t("\\section{"), i(1), t({"}", ""}), i(2) }),
-	s("ssct", { t("\\subsection{"), i(1), t({"}", ""}), i(2) })
+	s("ssct", { t("\\subsection{"), i(1), t({"}", ""}), i(2) }),
+	s("-i", { t("\\item "), i(1)}),
+	s("mk", { t("$"), i(1), t("$")}),
+	s("dm", { t({"\\[", ""}), i(1), t({"", "\\]"})})
 }
