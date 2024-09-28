@@ -154,8 +154,8 @@ in
         };
         "custom/current" = {
           exec = "~/.dots/home/modules/system/waybar/scripts/current.sh";
-          interval = 0;
-          signal = 4;
+          interval = "once";
+          signal = 10;
           format = "{}";
         };
 
