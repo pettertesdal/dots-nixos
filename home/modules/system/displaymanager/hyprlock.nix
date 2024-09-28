@@ -50,7 +50,7 @@ in
           dots_center = true;
           outer_color = "rgba(255, 255, 255, 0)";
           inner_color = "rgba(${base08}, 1)";
-          font_color = "rgba(255, 255, 255, 0.2)";
+          font_color = "rgba(0,0,0,1)";
           fade_on_empty = false;
           rounding = -1;
           check_color = "rgb(204, 136, 34)";

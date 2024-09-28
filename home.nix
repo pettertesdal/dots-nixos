@@ -2,6 +2,7 @@
 
 {
   imports = [
+    inputs.spicetify-nix.homeManagerModules.default
     ./home/modules/system/wm/hyprland.nix
     ./home/modules/system/fonts
     ./home/modules/system/waybar
@@ -55,11 +56,11 @@
 
     # music
     mpd
-    spotify
     # utils
     hypridle
     # networking tools
 
+    xfce.thunar
     socat # replacement of openbsd-netcat
     nmap # A utility for network discovery and security auditing
     httpie

@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, inputs, pkgs, ... }:
 {
   services.mpd = {
     enable = true;
@@ -16,4 +16,13 @@
   programs.ncmpcpp = {
     enable = true;
   };
+  programs.spicetify =
+   let
+     spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
+   in
+   {
+     enable = true;
+     theme = spicePkgs.themes.dribbblish;
+     colorScheme = "gruvbox";
+   };
 }
