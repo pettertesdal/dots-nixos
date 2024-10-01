@@ -35,11 +35,9 @@
         # Add the new file to master.tex before \end{document}
         master_file="master.tex"
         if [ -f "$master_file" ]; then
-          # Safely add the input line manually
-          temp_file=$(mktemp)
-          # Add \input before \end{document}
-          sed -i "/\\\\input{lec_$highest_num}/a \\\\\input\{$new_file\}" "$master_file"
-          echo "Added \\input{$new_file} to $master_file"
+          # Find the highest existing \input{lec_XX.tex} and append after it
+          sed -i "/\\input{lec_$highest_num.tex}/a \\\\\input\{$new_file\}" "$master_file"
+          echo "Added \\input{$new_file} to $master_file after \\input{lec_$highest_num.tex}"
         else
           echo "master.tex not found!"
         fi
