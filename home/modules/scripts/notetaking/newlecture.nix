@@ -38,7 +38,7 @@
           # Safely add the input line manually
           temp_file=$(mktemp)
           # Add \input before \end{document}
-          sed -i "/\\end{document}/i \\\\\input\{$new_file\}" "$master_file"
+          sed -i "/\\\\input{lec_$highest_num}/a \\\\\input\{$new_file\}" "$master_file"
           echo "Added \\input{$new_file} to $master_file"
         else
           echo "master.tex not found!"
