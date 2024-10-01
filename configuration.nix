@@ -15,6 +15,9 @@
 
   # Music
 
+  # Docker
+  virtualisation.docker.enable = true;
+
   # Bluetooth
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
@@ -42,7 +45,7 @@
   users.users.tesdap = {
     isNormalUser = true;
     description = "Petter";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker"];
     packages = with pkgs; [];
   };
 
@@ -84,6 +87,8 @@
     wget
     wl-clipboard
     curl
+
+    devenv
   ];
 
   environment.sessionVariables = {
