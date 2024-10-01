@@ -12,3 +12,6 @@ TODO:
 Convert hyprland config into this config
 Fix shiftwidth in nixvim
 git fugitiv
+add yazi file manager
+add zellij multiplexer
+
