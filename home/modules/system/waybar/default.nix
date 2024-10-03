@@ -115,8 +115,9 @@ in
           tooltip = false;
         };
         "custom/weather" = {
-          format = "{} {}";
-          exec = ".scripts/weather.sh";
+          format = " {}";
+          return-type = "json";
+          exec = "~/.dots/home/modules/system/waybar/scripts/weather.sh";
           interval = 600;
           tooltip = true;
         };
@@ -291,6 +292,7 @@ in
         font-family: "FantasqueSansM Nerd Font";
         font-size: 10px;
         min-height: 0;
+        color: #${base05};
       }
 
 
@@ -302,8 +304,8 @@ in
 
 
       tooltip {
-        color: @foreground;
-        background: @background;
+        color: #${base05};
+        background: #${base01};
         border: solid;
         border-width: 1.5px;
         border-radius: 7px;
