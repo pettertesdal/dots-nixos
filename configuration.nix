@@ -89,6 +89,7 @@
     curl
 
     devenv
+    dbeaver-bin
   ];
 
   environment.sessionVariables = {
@@ -128,6 +129,7 @@
     package = pkgs.nixFlakes;
     extraOptions = ''
       experimental-features = nix-command flakes
+      trusted-users = root tesdap
     '';
   };
 

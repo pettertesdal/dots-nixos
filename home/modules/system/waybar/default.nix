@@ -21,6 +21,7 @@ in
           "memory"
           "cpu"
           "custom/nix"
+          "custom/weather"
           "clock#time"
           "clock#date"
         ];
@@ -112,6 +113,12 @@ in
         "custom/nix" = {
           format = "(󱄅 )";
           tooltip = false;
+        };
+        "custom/weather" = {
+          format = "{} {}";
+          exec = ".scripts/weather.sh";
+          interval = 600;
+          tooltip = true;
         };
         "clock#time" = {
           format = "󱑂 {:%H:%M}";

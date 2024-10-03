@@ -5,6 +5,7 @@ in
 {
   stylix = {
     enable = true;
+    autoEnable = false;
     polarity = "dark";
     image = themePath + "/background.png";
     base16Scheme = themePath + "/colors.yaml";
