@@ -96,8 +96,8 @@ json_responseSun=$(curl -s "https://api.met.no/weatherapi/sunrise/3.0/sun?lat=60
 # Extract necessary data
 current_temp=$(echo "$json_response" | jq -r '.properties.timeseries[0].data.instant.details.air_temperature')
 today_weather=$(echo "$json_response" | jq -r '.properties.timeseries[0].data.next_6_hours.summary.symbol_code')
-today_min_temp=$(echo "$json_response" | jq -r '.properties.timeseries[0].data.next_12_hours.details.air_temperature_min')
-today_max_temp=$(echo "$json_response" | jq -r '.properties.timeseries[0].data.next_12_hours.details.air_temperature_max')
+today_min_temp=$(echo "$json_response" | jq -r '.properties.timeseries[0].data.next_6_hours.details.air_temperature_min')
+today_max_temp=$(echo "$json_response" | jq -r '.properties.timeseries[0].data.next_6_hours.details.air_temperature_max')
 today_precipitation_chance=$(echo "$json_response" | jq -r '.properties.timeseries[0].data.next_12_hours.details.probability_of_precipitation')
 wind_speed=$(echo "$json_response" | jq -r '.properties.timeseries[0].data.instant.details.wind_speed')
 humidity=$(echo "$json_response" | jq -r '.properties.timeseries[0].data.instant.details.relative_humidity')
