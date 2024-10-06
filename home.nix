@@ -69,6 +69,7 @@
     inkscape
     # misc
     tree
+    figlet
 
     # nix related
     #
