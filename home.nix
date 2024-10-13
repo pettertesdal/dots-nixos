@@ -81,6 +81,7 @@
     glow # markdown previewer in terminal
 
     # system tools
+    librewolf
 
   ];
 
