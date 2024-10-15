@@ -5,6 +5,7 @@
     [
       ./hardware-configuration.nix
       ./home/modules/system/stylix
+      ./vm.nix
     ];
 
   # Bootloader.
