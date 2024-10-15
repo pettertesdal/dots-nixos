@@ -67,6 +67,7 @@
     httpie
 
     inkscape
+    libwebp
     # misc
     tree
     figlet
@@ -82,6 +83,7 @@
 
     # system tools
     librewolf
+
 
   ];
 

@@ -90,6 +90,7 @@
 
     devenv
     dbeaver-bin
+    beekeeper-studio
   ];
 
   environment.sessionVariables = {
