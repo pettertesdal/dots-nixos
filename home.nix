@@ -84,6 +84,7 @@
     # system tools
     librewolf
 
+    qemu
 
   ];
 
