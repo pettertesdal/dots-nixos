@@ -45,7 +45,7 @@
   users.users.tesdap = {
     isNormalUser = true;
     description = "Petter";
-    extraGroups = [ "networkmanager" "wheel" "docker"];
+    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd"];
     packages = with pkgs; [];
   };
 
