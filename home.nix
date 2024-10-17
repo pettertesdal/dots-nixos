@@ -83,6 +83,7 @@
 
     # system tools
     librewolf
+    thunderbird
 
     qemu
 
