@@ -40,6 +40,7 @@
   programs.nixvim.enable = true;
 
 
+
   programs.bash.enable = true;
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
