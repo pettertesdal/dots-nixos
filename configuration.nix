@@ -61,6 +61,7 @@
   
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowInsecure = true;
 
   # Setting up hyprland
   programs.hyprland.enable = true;
@@ -100,6 +101,7 @@
     devenv
     dbeaver-bin
     beekeeper-studio
+    (steam.override { extraLibraries = (pkgs: [pkgs.nghttp2 pkgs.libidn2 pkgs.rtmpdump pkgs.libpsl pkgs.curl pkgs.krb5 pkgs.keyutils openssl_1_1]);}).run
   ];
 
   environment.sessionVariables = {
@@ -110,6 +112,7 @@
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
+    "openssl-1.1.1w" # For steam
   ];
 
 
