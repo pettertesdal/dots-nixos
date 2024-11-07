@@ -112,7 +112,7 @@
 
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
-    "openssl-1.1.1w" # For steam
+    "openssl-1.1.1w" # For steam siralim
   ];
 
 

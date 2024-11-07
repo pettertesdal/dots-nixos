@@ -82,11 +82,19 @@
     # productivity
     glow # markdown previewer in terminal
 
+    # Community
+    element-desktop-wayland
+    discord-ptb
+    vesktop
+    pavucontrol
+
     # system tools
     librewolf
     thunderbird
 
     qemu
+
+    zellij
 
   ];
 
