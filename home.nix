@@ -95,6 +95,7 @@
     qemu
 
     zellij
+    slack
 
   ];
 
