@@ -28,7 +28,7 @@
       {
         mode = "n";
         key = "m";
-        action = ":VimtexView<cr>";
+        action = ":VimtexCompile<cr>";
       }
     ];
 

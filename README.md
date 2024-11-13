@@ -14,4 +14,5 @@ Fix shiftwidth in nixvim
 git fugitiv
 add yazi file manager
 add zellij multiplexer
-
+## Features
+make 4 documents workspace, the workspace should be able to expand, so that if you are on workspace 4 and you press windows 4 you will go to the next document workspace.
