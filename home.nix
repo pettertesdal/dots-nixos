@@ -91,6 +91,7 @@
     # system tools
     librewolf
     thunderbird
+    bruno
 
     qemu
 
