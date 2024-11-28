@@ -35,6 +35,11 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  networking.extraHosts = 
+    ''
+      127.0.0.1 localhost keycloak
+    '';
+
   # Set your time zone.
   time.timeZone = "Europe/Oslo";
 
