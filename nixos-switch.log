@@ -10,12 +10,14 @@ trace: evaluation warning: Passing a attribute set containing name, icon.icon, e
       icon = "";
     ...
 
-trace: evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/7bjphb2ndkj7sybfasdpwx54wv0z27k3-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
-trace: evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/7bjphb2ndkj7sybfasdpwx54wv0z27k3-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
-trace: evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/7bjphb2ndkj7sybfasdpwx54wv0z27k3-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
-trace: evaluation warning: The option `services.xserver.layout' defined in `/nix/store/7bjphb2ndkj7sybfasdpwx54wv0z27k3-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
+trace: evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/mj1nsb3yfsigwnc9mk1yhj051hrvm9z2-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
+trace: evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/mj1nsb3yfsigwnc9mk1yhj051hrvm9z2-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
+trace: evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/mj1nsb3yfsigwnc9mk1yhj051hrvm9z2-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
+trace: evaluation warning: The option `services.xserver.layout' defined in `/nix/store/mj1nsb3yfsigwnc9mk1yhj051hrvm9z2-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
 trace: evaluation warning: The ‘gnome.adwaita-icon-theme’ was moved to top-level. Please use ‘pkgs.adwaita-icon-theme’ directly.
 activating the configuration...
 setting up /etc...
 reloading user units for tesdap...
 restarting sysinit-reactivation.target
+restarting the following units: home-manager-tesdap.service
+the following new units were started: run-credentials-systemd\x2dtmpfiles\x2dresetup.service.mount, sysinit-reactivation.target, systemd-tmpfiles-resetup.service

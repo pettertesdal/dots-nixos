@@ -15,6 +15,9 @@
   };
   programs.ncmpcpp = {
     enable = true;
+    settings = {
+      execute_on_song_change = ''notify-send "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"'';
+    };
   };
   programs.spicetify =
    let
