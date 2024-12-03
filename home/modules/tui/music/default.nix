@@ -16,7 +16,7 @@
   programs.ncmpcpp = {
     enable = true;
     settings = {
-      execute_on_song_change = ''notify-send "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"'';
+      execute_on_song_change = ''$HOME/.dots/home/modules/scripts/musicnotification.sh'';
     };
   };
   programs.spicetify =
