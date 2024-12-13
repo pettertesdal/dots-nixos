@@ -17,8 +17,6 @@ in
         timeout = 5;             # Default timeout in seconds
         ignore_newline = true;   # Handle multiline messages
 
-        # Placement
-        geometry = "300x80-20+20";  # Position and size of notifications
       };
     };
   };
