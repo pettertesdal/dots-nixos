@@ -57,11 +57,6 @@
       {
         event = "User";
         pattern = "VimtexEventInitPost";
-        callback = "vimtex#compiler#compile";
-      }
-      {
-        event = "User";
-        pattern = "VimtexEventInitPost";
         command = "set conceallevel=1";
       }
       {
