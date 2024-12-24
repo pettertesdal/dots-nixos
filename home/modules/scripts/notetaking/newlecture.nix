@@ -25,7 +25,7 @@
 
         # Add \lecture{} command at the top of the new file
         current_date=$(date +"%d-%m-%Y")
-        lecture_command="\\lecture{$next_num}{$current_date}{title}{professor}"
+        lecture_command="\\lecture{$next_num}{professor}{$current_date}"
 
         # Insert the \lecture command at the beginning of the new file
         echo -e "$lecture_command\n" | cat - "$new_file" > temp && mv temp "$new_file"
@@ -40,11 +40,11 @@
           # Check if any \input{lec_xx.tex} exists
           if grep -q "/\\input{lec_" "$master_file"; then
             # Find the highest existing \input{lec_XX.tex} and append after it
-            sed -i "/\\input{lec_$highest_num.tex}/a \\\\\input\{$new_file\}" "$master_file"
+            sed -i "/\\input{chapters/lectures/lec_$highest_num.tex}/a \\\\\input\{$new_file\}" "$master_file"
             echo "Added \\input{$new_file} to $master_file after \\input{lec_$highest_num.tex}"
           else
             # No existing \input{lec_xx.tex}, append at the bottom
-            echo "\\input{$new_file}" >> "$master_file"
+            echo "\\input{chapters/lectures/$new_file}" >> "$master_file"
             echo "No \\input{lec_xx.tex} found; appended \\input{$new_file} at the bottom of $master_file"
           fi
         else
