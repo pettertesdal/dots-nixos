@@ -25,12 +25,14 @@
 
         # Add \lecture{} command at the top of the new file
         current_date=$(date +"%d-%m-%Y")
-        lecture_command="\\lecture{$next_num}{professor}{$current_date}"
 
-        # Insert the \lecture command at the beginning of the new file
-        echo -e "$lecture_command\n" | cat - "$new_file" > temp && mv temp "$new_file"
+        # NEW #######
+        lecture_template="\\begin{lecture}{professor}{Lecture $next_num}{{$current_date}}\\n\\n\\end{lecture}\\n"
 
+        # Insert the lecture template into the new file
+        echo -e "$lecture_template" > "$new_file"
 
+        # NEW #######
 
         # Add the new file to master.tex before \end{document}
         cd ..
