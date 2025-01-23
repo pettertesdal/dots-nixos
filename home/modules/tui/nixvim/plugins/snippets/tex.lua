@@ -25,6 +25,7 @@ return {
 	s("sct", { t("\\section{"), i(1), t({"}", ""}), i(2) }),
 	s("ssct", { t("\\subsection{"), i(1), t({"}", ""}), i(2) }),
 	s("bft", { t("\\textbf{"), i(1), t({"}"}), i(2) }),
+	s("ccc", { t("\\texttt{"), i(1), t({"}"}), i(2) }),
 	s("itt", { t("\\textit{"), i(1), t({"}"}), i(2) }),
 	s("-i", { t("\\item "), i(1)}),
 	s("mk", { t("$"), i(1), t("$")}),

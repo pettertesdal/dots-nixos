@@ -27,10 +27,13 @@
         current_date=$(date +"%d-%m-%Y")
 
         # NEW #######
-        lecture_template="\\begin{lecture}{professor}{Lecture $next_num}{{$current_date}}\\n\\n\\end{lecture}\\n"
+        lecture_template_beg="\begin{lecture}{professor}{Lecture $next_num}{$current_date}{0}"
+        lecture_template_end="\end{lecture}"
 
         # Insert the lecture template into the new file
-        echo -e "$lecture_template" > "$new_file"
+        echo "$lecture_template_beg" >> "$new_file"
+        echo "" >> "$new_file"
+        echo "$lecture_template_end" >> "$new_file"
 
         # NEW #######
 
@@ -63,15 +66,21 @@
         echo "Created course directory: $course_dir"
         
         # Change into the course directory
-        cd "$course_dir"
+        cd "$course_dir" || exit
         
-        # Copy the master.tex file from the template folder
-        cp -r ../../../.templates/courses/* .
-        echo "Copied master.tex from template"
+        # Define the source template and the folder to be symlinked
+        template_dir="../../../.templates/courses"
+        symlink_target="preamble" # Replace with the actual folder name you want as a symlink
+
+        # Copy everything except the specific folder
+        rsync -av --exclude="$symlink_target" "$template_dir/" .
+        
+        # Create the symlink for the excluded folder
+        ln -s "$template_dir/$symlink_target" "$symlink_target"
+        echo "Copied template except '$symlink_target' and created a symlink for it."
       else
-        cd courses
-        
-      echo "Not implemented"
+        cd courses || exit
+        echo "Not implemented"
       fi
       '';
   in [
