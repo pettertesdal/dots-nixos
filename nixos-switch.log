@@ -1,5 +1,7 @@
+warning: you don't have Internet access; disabling some network-dependent features
 warning: Git tree '/home/tesdap/.dots' is dirty
 building the system configuration...
+warning: you don't have Internet access; disabling some network-dependent features
 warning: Git tree '/home/tesdap/.dots' is dirty
 trace: evaluation warning: Passing a attribute set containing name, icon.icon, extraConfig for `home-manager.users.tesdap.programs.nixvim.plugins.lualine.settings.sections.lualine_x."[definition 1-entry 2]"' is deprecated, use (attribute set of anything) or raw lua code instead. Definitions: 
 - In `/nix/store/7j08fq81pzh0jkf2i7pizg0njh4w7c9s-source/plugins/statuslines/lualine.nix':
@@ -10,13 +12,13 @@ trace: evaluation warning: Passing a attribute set containing name, icon.icon, e
       icon = "";
     ...
 
-trace: evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/d8wvqz7kk7z9hbs6qz3ix4n96q5n212w-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
-trace: evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/d8wvqz7kk7z9hbs6qz3ix4n96q5n212w-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
-trace: evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/d8wvqz7kk7z9hbs6qz3ix4n96q5n212w-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
-trace: evaluation warning: The option `services.xserver.layout' defined in `/nix/store/d8wvqz7kk7z9hbs6qz3ix4n96q5n212w-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
+trace: evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/nis0a1v6rbl3zqr4vh9n8dbqhr2hfhw0-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
+trace: evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/nis0a1v6rbl3zqr4vh9n8dbqhr2hfhw0-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
+trace: evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/nis0a1v6rbl3zqr4vh9n8dbqhr2hfhw0-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
+trace: evaluation warning: The option `services.xserver.layout' defined in `/nix/store/nis0a1v6rbl3zqr4vh9n8dbqhr2hfhw0-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
 trace: evaluation warning: The ‘gnome.adwaita-icon-theme’ was moved to top-level. Please use ‘pkgs.adwaita-icon-theme’ directly.
 activating the configuration...
 setting up /etc...
 reloading user units for tesdap...
 restarting sysinit-reactivation.target
-the following new units were started: libvirtd.service
+the following new units were started: libvirtd.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service
