@@ -1,24 +1,29 @@
-warning: you don't have Internet access; disabling some network-dependent features
 warning: Git tree '/home/tesdap/.dots' is dirty
-building the system configuration...
-warning: you don't have Internet access; disabling some network-dependent features
-warning: Git tree '/home/tesdap/.dots' is dirty
-trace: evaluation warning: Passing a attribute set containing name, icon.icon, extraConfig for `home-manager.users.tesdap.programs.nixvim.plugins.lualine.settings.sections.lualine_x."[definition 1-entry 2]"' is deprecated, use (attribute set of anything) or raw lua code instead. Definitions: 
-- In `/nix/store/7j08fq81pzh0jkf2i7pizg0njh4w7c9s-source/plugins/statuslines/lualine.nix':
-    {
-      color = {
-        fg = "#ffffff";
-      };
-      icon = "";
-    ...
+error:
+       … while calling the 'derivationStrict' builtin
 
-trace: evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/nis0a1v6rbl3zqr4vh9n8dbqhr2hfhw0-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
-trace: evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/nis0a1v6rbl3zqr4vh9n8dbqhr2hfhw0-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
-trace: evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/nis0a1v6rbl3zqr4vh9n8dbqhr2hfhw0-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
-trace: evaluation warning: The option `services.xserver.layout' defined in `/nix/store/nis0a1v6rbl3zqr4vh9n8dbqhr2hfhw0-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
-trace: evaluation warning: The ‘gnome.adwaita-icon-theme’ was moved to top-level. Please use ‘pkgs.adwaita-icon-theme’ directly.
-activating the configuration...
-setting up /etc...
-reloading user units for tesdap...
-restarting sysinit-reactivation.target
-the following new units were started: libvirtd.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+         at /builtin/derivation.nix:9:12: (source not available)
+
+       … while evaluating derivation 'nixos-rebuild'
+         whose name attribute is located at /nix/store/k8nkf470zpidpa5nh76lh2x6rxfzpwa4-source/pkgs/stdenv/generic/make-derivation.nix:375:7
+
+       … while evaluating attribute 'substitutions' of derivation 'nixos-rebuild'
+
+         at /nix/store/k8nkf470zpidpa5nh76lh2x6rxfzpwa4-source/pkgs/build-support/substitute/substitute.nix:56:5:
+
+           55|   // lib.optionalAttrs (args ? substitutions) {
+           56|     substitutions =
+             |     ^
+           57|       assert lib.assertMsg (lib.isList args.substitutions)
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: attribute 'nixVersion' missing
+
+       at /nix/store/jh7l6m7as2klccjk1d6bhfh7q72va3ih-source/configuration.nix:161:15:
+
+          160|   nix = {
+          161|     package = pkgs.nixVersion.stable;
+             |               ^
+          162|     extraOptions = ''
+       Did you mean one of nixVersions or lixVersions?

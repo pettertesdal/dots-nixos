@@ -158,7 +158,7 @@
   };
 
   nix = {
-    package = pkgs.nixFlakes;
+    package = pkgs.nixVersion.stable;
     extraOptions = ''
       experimental-features = nix-command flakes
       trusted-users = root tesdap
