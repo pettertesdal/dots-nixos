@@ -26,8 +26,7 @@
 
         servers = {
           clangd.enable = true;
-	      jdt-language-server.enable = true;
-          vuels.enable = true;
+          jdt-language-server.enable = true;
         };
       };
     };

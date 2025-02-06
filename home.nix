@@ -83,7 +83,6 @@
     glow # markdown previewer in terminal
 
     # Community
-    element-desktop-wayland
     discord-ptb
     vesktop
     pavucontrol

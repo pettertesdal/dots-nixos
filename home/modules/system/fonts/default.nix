@@ -2,6 +2,8 @@
 {
   fonts.fontconfig.enable = true;
   home.packages = [
-    (pkgs.nerdfonts.override { fonts = [ "Meslo" "FantasqueSansMono" "ProggyClean"]; })
+    pkgs.nerd-fonts.meslo-lg
+    pkgs.nerd-fonts.fantasque-sans-mono
+    pkgs.nerd-fonts.proggy-clean-tt
   ];
 }

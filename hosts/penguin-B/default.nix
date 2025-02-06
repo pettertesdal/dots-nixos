@@ -48,7 +48,6 @@
   users.defaultUserShell = pkgs.bash;
 
   nix = {
-    package = pkgs.nixFlakes;
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
