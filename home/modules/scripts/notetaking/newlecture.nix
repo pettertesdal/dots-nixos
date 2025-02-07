@@ -8,7 +8,8 @@
       # Creating a new lecture
       if [ "$CREATION_TYPE" == "lecture" ]; then
         cd current_course/chapters/lectures
-        highest_num=$(ls lec_*.tex 2>/dev/null | grep -oP 'lec_\K\d+(?=\.tex)' | sort -n | tail -1)
+        highest_num=$(ls lec_*.tex 2>/dev/null | grep -oP 'lec_\K\d+(?=\.tex)' | sort -n | awk 'END {print $0+0}')
+
 
         # If no files were found, set the number to 0, else increment the highest found number
         if [ -z "$highest_num" ]; then
