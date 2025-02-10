@@ -20,15 +20,23 @@
       url = "github:Gerg-L/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nvf = {
+      url = "github:notashelf/nvf";
+      # You can override the input nixpkgs to follow your system's
+      # instance of nixpkgs. This is safe to do as nvf does not depend
+      # on a binary cache.
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, home-manager, stylix, ... }@inputs: 
+  outputs = { nixpkgs, home-manager, stylix, nvf, ... }@inputs: 
     {
       nixosConfigurations = {
         penguin-B = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
             stylix.nixosModules.stylix
+            nvf.nixosModules.default
             ./configuration.nix
             home-manager.nixosModules.home-manager
             {
