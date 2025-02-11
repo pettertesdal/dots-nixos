@@ -9,8 +9,6 @@
         view_method = "zathura";
 
         compiler_method = "latexmk";
-        compiler_latexmk = { options = [ "-shell-escape" ]; };
-        syntax_packages = { minted.load = 2; };
 
         log_verbose = 1;
         quickfix_enabled = true;
