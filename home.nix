@@ -49,6 +49,7 @@
 
     neofetch
 
+
     # Textdocuments
   
     zathura # Pdf viewer
