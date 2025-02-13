@@ -9,6 +9,7 @@
         view_method = "zathura";
 
         compiler_method = "latexmk";
+        compiler_latexmk = { options = [ "-shell-escape" ]; };
 
         log_verbose = 1;
         quickfix_enabled = true;
