@@ -45,7 +45,6 @@
 
   # Shell config
   # programs.bash.enable = true;
-  users.defaultUserShell = pkgs.bash;
 
   nix = {
     extraOptions = ''
