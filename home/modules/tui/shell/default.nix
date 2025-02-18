@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
+    ./starship.nix
     ./aliases.nix
     ./tmux.nix
     ./zellij.nix
