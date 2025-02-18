@@ -31,7 +31,6 @@ in {
         gtk3
 
         # script and service helpers
-        bash
         brightnessctl
         coreutils
         gawk

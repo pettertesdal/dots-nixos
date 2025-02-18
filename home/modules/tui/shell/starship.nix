@@ -6,6 +6,7 @@
     enableZshIntegration = true;
 
     settings = {
+
       format = ''
         [](bg:#030B16 fg:#7DF9AA)\
         [󰀵 ](bg:#7DF9AA fg:#090c0c)\
@@ -17,8 +18,8 @@
         $git_branch\
         $git_status\
         $git_metrics\
-        [](fg:#FCF392 bg:#030B16)\
-        $character\
+        [](fg:#FCF392 bg:#030B16)\n
+        $character
       '';  # Proper Nix multiline format
 
       [directory]
