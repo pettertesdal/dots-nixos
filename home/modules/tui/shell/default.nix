@@ -3,6 +3,7 @@
   imports = [
     ./aliases.nix
     ./tmux.nix
+    ./zellij.nix
   ];
   programs = {
 
