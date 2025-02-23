@@ -81,8 +81,8 @@
   };
 
   programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
-  users.users.tesdap.shell = pkgs.zsh;
+  # users.defaultUserShell = pkgs.zsh;
+  # users.users.tesdap.shell = pkgs.zsh;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget

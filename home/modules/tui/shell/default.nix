@@ -13,13 +13,6 @@
       enableCompletion = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
-
-
-      oh-my-zsh = {
-        enable = true;
-        plugins = [ "direnv" ];
-        theme = "robbyrussell";
-      };
     };
     direnv = {
       enable = true;
