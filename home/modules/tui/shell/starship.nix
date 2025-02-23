@@ -90,7 +90,7 @@
       directory = {
         style = "fg:color_fg0 bg:color_yellow";
         format = "[ $path ]($style)";
-        truncation_length = 3;
+        truncation_length = 2;
         truncation_symbol = "…/";
         substitutions = {
           "documents" = "󰈙 ";
@@ -104,6 +104,8 @@
         symbol = "";
         style = "bg:color_aqua";
         format = "[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)";
+        truncation_length = 10;
+        truncation_symbol = "…";
       };
 
       git_status = {
