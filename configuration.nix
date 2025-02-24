@@ -7,6 +7,7 @@
       ./home/modules/system/stylix
       ./modules/nvf
       ./modules/tuigreet.nix
+      ./modules/bootup.nix
       ./vm.nix
     ];
 
