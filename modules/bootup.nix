@@ -10,6 +10,10 @@
           selected_themes = [ "rings" ];
         })
       ];
+      extraConfig = ''
+          [Daemon]
+          ShowDelay=5
+        '';
     };
 
     # Enable "Silent Boot"
