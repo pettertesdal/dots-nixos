@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 let
-  command = "${pkgs.swww}/bin/swww init && sleep 1 && ${pkgs.hyprland}/bin/hyprland";
+  command = "swww init && sleep 1 && Hyprland";
 in
 {
   services.greetd = {
