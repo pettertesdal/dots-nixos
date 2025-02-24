@@ -6,7 +6,7 @@
       ./hardware-configuration.nix
       ./home/modules/system/stylix
       ./modules/nvf
-      ./modules/tuigreet
+      ./modules/tuigreet.nix
       ./vm.nix
     ];
 
