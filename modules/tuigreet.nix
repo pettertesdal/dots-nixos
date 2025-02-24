@@ -10,7 +10,7 @@
                  --asterisks \
                  --user-menu \
                  --remember \
-                 --color background=282828,foreground=ebdbb2,primary=d79921,secondary=b16286,alert=cc241d,selection=458588
+                 --theme 'text=white;time=yellow;container=black;border=blue;title=yellow;greet=green;prompt=bright_red;input=magenta;action=cyan;button=bright_yellow'
         '';
       };
     };
