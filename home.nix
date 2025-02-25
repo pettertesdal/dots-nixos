@@ -132,7 +132,8 @@
       terminal.shell.program = "${pkgs.zsh}/bin/zsh"; 
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
-      window.opacity = 0.8;
+      window.opacity = 0.9;
+      general.import = ["~/.dots/home/themes/gruvbox-dark/gruvbox_dark.toml"];
     };
   };
 
