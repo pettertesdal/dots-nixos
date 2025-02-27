@@ -61,6 +61,7 @@
     # utils
     hypridle
     # networking tools
+    inetutils
 
     xfce.thunar
     socat # replacement of openbsd-netcat

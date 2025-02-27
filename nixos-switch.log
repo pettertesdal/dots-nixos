@@ -1,20 +1,20 @@
 warning: Git tree '/home/tesdap/.dots' is dirty
 building the system configuration...
 warning: Git tree '/home/tesdap/.dots' is dirty
-evaluation warning: The option `plugins.lsp.servers.jdt-language-server' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/lsp.nix' has been renamed to `plugins.lsp.servers.jdtls'.
+evaluation warning: The option `plugins.lsp.servers.jdt-language-server' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/lsp.nix' has been renamed to `plugins.lsp.servers.jdtls'.
 evaluation warning: Nixvim (plugins.web-devicons): This plugin was enabled automatically because the following plugins are enabled.
                     This behaviour is deprecated. Please explicitly define `plugins.web-devicons.enable` or alternatively
                     enable `plugins.mini.enable` with `plugins.mini.modules.icons` and `plugins.mini.mockDevIcons`.
                     plugins.telescope
                     plugins.neo-tree
-evaluation warning: The option `plugins.lualine.sections' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
-evaluation warning: The option `plugins.lualine.globalstatus' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
-evaluation warning: The option `plugins.floaterm.keymaps.toggle' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.keymap_toggle'.
-evaluation warning: The option `plugins.floaterm.width' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.width'.
-evaluation warning: The option `plugins.floaterm.title' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.title'.
-evaluation warning: The option `plugins.floaterm.height' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.height'.
+evaluation warning: The option `plugins.lualine.sections' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
+evaluation warning: The option `plugins.lualine.globalstatus' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
+evaluation warning: The option `plugins.floaterm.keymaps.toggle' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.keymap_toggle'.
+evaluation warning: The option `plugins.floaterm.width' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.width'.
+evaluation warning: The option `plugins.floaterm.title' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.title'.
+evaluation warning: The option `plugins.floaterm.height' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.height'.
 evaluation warning: Passing a boolean for `home-manager.users.tesdap.programs.nixvim.plugins.markdown-preview.settings.auto_close' is deprecated, use one of 0, 1 instead. Definitions:
-                    - In `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/markdown-preview.nix': false
+                    - In `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/markdown-preview.nix': false
 evaluation warning: Passing a attribute set containing name, icon.icon, extraConfig for `home-manager.users.tesdap.programs.nixvim.plugins.lualine.settings.sections.lualine_x."[definition 1-entry 2]"' is deprecated, use (attribute set of anything) or raw lua code instead. Definitions:
                     - In `/nix/store/1m7kigpcgkrlhw7yy2nxqnyc76rag14i-source/plugins/by-name/lualine':
                         {
@@ -23,23 +23,50 @@ evaluation warning: Passing a attribute set containing name, icon.icon, extraCon
                           };
                           icon = "";
                         ...
-evaluation warning: tesdap profile: The option `plugins.lsp.servers.jdt-language-server' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/lsp.nix' has been renamed to `plugins.lsp.servers.jdtls'.
+evaluation warning: tesdap profile: The option `plugins.lsp.servers.jdt-language-server' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/lsp.nix' has been renamed to `plugins.lsp.servers.jdtls'.
 evaluation warning: tesdap profile: Nixvim (plugins.web-devicons): This plugin was enabled automatically because the following plugins are enabled.
                     This behaviour is deprecated. Please explicitly define `plugins.web-devicons.enable` or alternatively
                     enable `plugins.mini.enable` with `plugins.mini.modules.icons` and `plugins.mini.mockDevIcons`.
                     plugins.telescope
                     plugins.neo-tree
-evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
-evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
-evaluation warning: tesdap profile: The option `plugins.floaterm.keymaps.toggle' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.keymap_toggle'.
-evaluation warning: tesdap profile: The option `plugins.floaterm.width' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.width'.
-evaluation warning: tesdap profile: The option `plugins.floaterm.title' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.title'.
-evaluation warning: tesdap profile: The option `plugins.floaterm.height' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.height'.
-evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
-evaluation warning: The option `services.xserver.layout' defined in `/nix/store/h35wadc0n9v7i9wzvh2zpaf1g79dc40r-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
+evaluation warning: tesdap profile: The option `plugins.lualine.sections' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.sections'.
+evaluation warning: tesdap profile: The option `plugins.lualine.globalstatus' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/lualine.nix' has been renamed to `plugins.lualine.settings.options.globalstatus'.
+evaluation warning: tesdap profile: The option `plugins.floaterm.keymaps.toggle' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.keymap_toggle'.
+evaluation warning: tesdap profile: The option `plugins.floaterm.width' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.width'.
+evaluation warning: tesdap profile: The option `plugins.floaterm.title' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.title'.
+evaluation warning: tesdap profile: The option `plugins.floaterm.height' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/home/modules/tui/nixvim/plugins/floaterm.nix' has been renamed to `plugins.floaterm.settings.height'.
+evaluation warning: The option `services.xserver.xkbVariant' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/configuration.nix' has been renamed to `services.xserver.xkb.variant'.
+evaluation warning: The option `services.xserver.layout' defined in `/nix/store/6f7gm3pl7s32s0yr8yshx7nsncfgzfqw-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
+these 13 derivations will be built:
+  /nix/store/34896x637ciyv7666aq7zk5y8f98q7l3-dummy-fc-dir2.drv
+  /nix/store/9db7ww7ygcsblpmp0rz26d1jzspw3vwb-dummy-xdg-mime-dirs2.drv
+  /nix/store/lhkkd9ly7p7pydnqa97zfzmnd343vczi-dummy-xdg-mime-dirs1.drv
+  /nix/store/nmab19czg70zxqgqcr5gp1v8dygs4i6n-dummy-fc-dir1.drv
+  /nix/store/j810ah6ykhqfi626ia1ww4ipaz29wwls-home-manager-path.drv
+  /nix/store/c62sh2dg17cb45hm85yk4zm16ypryj4m-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/9ppaacwlg2ghs2a5aazfsrsc6ijs2ckc-home-manager-files.drv
+  /nix/store/660r0vpjzsyy0mq16kcs27hfcb3hzb65-home-manager-generation.drv
+  /nix/store/9l9p68ksl2smkmf7l1l27ivl53y9q06g-user-environment.drv
+  /nix/store/fllfx15zzk46nis7q0msx18daix2km4i-unit-home-manager-tesdap.service.drv
+  /nix/store/hzyys58x7sjfzj1vv5sz1z2924flcd79-system-units.drv
+  /nix/store/lvggy1xd84xw5nkgrsddsik4p9g91ssn-etc.drv
+  /nix/store/zlhdp6skrldcsy2ay90d8505m67wwz3v-nixos-system-penguin-B-25.05.20250208.a79cfe0.drv
+building '/nix/store/nmab19czg70zxqgqcr5gp1v8dygs4i6n-dummy-fc-dir1.drv'...
+building '/nix/store/34896x637ciyv7666aq7zk5y8f98q7l3-dummy-fc-dir2.drv'...
+building '/nix/store/lhkkd9ly7p7pydnqa97zfzmnd343vczi-dummy-xdg-mime-dirs1.drv'...
+building '/nix/store/9db7ww7ygcsblpmp0rz26d1jzspw3vwb-dummy-xdg-mime-dirs2.drv'...
+building '/nix/store/j810ah6ykhqfi626ia1ww4ipaz29wwls-home-manager-path.drv'...
+building '/nix/store/c62sh2dg17cb45hm85yk4zm16ypryj4m-hm_fontconfigconf.d10hmfonts.conf.drv'...
+building '/nix/store/9l9p68ksl2smkmf7l1l27ivl53y9q06g-user-environment.drv'...
+building '/nix/store/9ppaacwlg2ghs2a5aazfsrsc6ijs2ckc-home-manager-files.drv'...
+building '/nix/store/660r0vpjzsyy0mq16kcs27hfcb3hzb65-home-manager-generation.drv'...
+building '/nix/store/fllfx15zzk46nis7q0msx18daix2km4i-unit-home-manager-tesdap.service.drv'...
+building '/nix/store/hzyys58x7sjfzj1vv5sz1z2924flcd79-system-units.drv'...
+building '/nix/store/lvggy1xd84xw5nkgrsddsik4p9g91ssn-etc.drv'...
+building '/nix/store/zlhdp6skrldcsy2ay90d8505m67wwz3v-nixos-system-penguin-B-25.05.20250208.a79cfe0.drv'...
 activating the configuration...
 setting up /etc...
 reloading user units for tesdap...
 restarting sysinit-reactivation.target
-the following new units were started: libvirtd.service, NetworkManager-dispatcher.service
-Done. The new configuration is /nix/store/8yjd3yz5hviih6ym4y97mzbkfyc8dnnc-nixos-system-penguin-B-25.05.20250208.a79cfe0
+the following new units were started: libvirtd.service, NetworkManager-dispatcher.service, sysinit-reactivation.target, systemd-ask-password-console.path, systemd-tmpfiles-resetup.service
+Done. The new configuration is /nix/store/nly45bnf08y7naa7cwqirp2gcxdrc83y-nixos-system-penguin-B-25.05.20250208.a79cfe0
