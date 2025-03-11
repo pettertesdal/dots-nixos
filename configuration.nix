@@ -113,6 +113,10 @@
     wl-clipboard
     curl
 
+    # Languages
+    llvm
+    clang
+
     devenv
     dbeaver-bin
     beekeeper-studio
