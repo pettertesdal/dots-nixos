@@ -91,6 +91,7 @@
     # system tools
     librewolf
     thunderbird
+    super-productivity
     bruno
 
     qemu
