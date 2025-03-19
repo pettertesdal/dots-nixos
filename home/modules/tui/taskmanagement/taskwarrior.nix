@@ -2,6 +2,6 @@
 {
   programs.taskwarrior = {
     enable = true;
-    dataLocation = "$HOME/documents/.tasks/"
+    dataLocation = "$HOME/documents/.tasks/";
   };
 }

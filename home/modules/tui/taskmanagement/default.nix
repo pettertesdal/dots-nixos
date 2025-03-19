@@ -4,4 +4,3 @@
     ./taskwarrior.nix
   ];
 }
-
