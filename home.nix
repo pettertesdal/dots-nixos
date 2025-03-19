@@ -11,6 +11,7 @@
     ./home/modules/system/notification
     ./home/modules/tui/nixvim
     ./home/modules/tui/shell
+    ./home/modules/tui/taskmanagement
     ./home/modules/tui/notes
     ./home/modules/tui/music
     ./home/modules/gui
@@ -99,7 +100,6 @@
 
     slack
 
-    taskwarrior3
 
   ];
 
