@@ -47,6 +47,7 @@
     # feel free to add your own or remove some of them
 
     neofetch
+    lazygit
 
 
     # Textdocuments
