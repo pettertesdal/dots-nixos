@@ -99,6 +99,8 @@
 
     slack
 
+    taskwarrior3
+
   ];
 
   # basic configuration of git, please change to your own
