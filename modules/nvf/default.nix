@@ -54,7 +54,7 @@
           # css.enable = true;
           # html.enable = true;
           # sql.enable = true;
-          # java.enable = true;
+          java.enable = true;
           # kotlin.enable = true;
           # ts.enable = true;
           # go.enable = true;
@@ -188,7 +188,7 @@
           obsidian.enable = false; # FIXME: neovim fails to build if obsidian is enabled
           neorg.enable = false;
           orgmode.enable = false;
-          mind-nvim.enable = true;
+          mind-nvim.enable = false;
           todo-comments.enable = true;
         };
 
