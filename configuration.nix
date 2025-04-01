@@ -117,6 +117,8 @@
     llvm
     clang
 
+    # 3ds Emulator
+
     devenv
     dbeaver-bin
     beekeeper-studio

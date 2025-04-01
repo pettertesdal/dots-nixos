@@ -14,6 +14,7 @@
     ./home/modules/tui/taskmanagement
     ./home/modules/tui/notes
     ./home/modules/tui/music
+    ./home/modules/tui/terminal
     ./home/modules/gui
     ./home/modules/scripts/sysupdate.nix
     ./home/modules/scripts/notetaking
@@ -95,6 +96,8 @@
     thunderbird
     super-productivity
     bruno
+
+    azahar
 
     qemu
 
