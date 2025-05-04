@@ -36,6 +36,8 @@
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
   services.blueman.enable = true;
 
+  hardware.openrazer.enable = true;
+
   # Enable networking
   networking.networkmanager.enable = true;
 
@@ -63,7 +65,7 @@
   users.users.tesdap = {
     isNormalUser = true;
     description = "Petter";
-    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd"];
+    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "openrazer" ];
     packages = with pkgs; [];
   };
 
@@ -111,6 +113,7 @@
     wget
     wl-clipboard
     curl
+    openrazer-daemon # For getting razer to work
 
     devenv
     dbeaver-bin
