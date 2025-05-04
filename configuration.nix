@@ -7,7 +7,6 @@
       ./home/modules/system/stylix
       ./modules/nvf
       ./modules/tuigreet.nix
-      ./modules/bootup.nix
       ./vm.nix
     ];
 
@@ -113,12 +112,6 @@
     wl-clipboard
     curl
 
-    # Languages
-    llvm
-    clang
-
-    # 3ds Emulator
-
     devenv
     dbeaver-bin
     beekeeper-studio
@@ -155,16 +148,12 @@
   services.pipewire.wireplumber.extraConfig."10-bluez" = {
     "monitor.bluez.properties" = {
       "bluez5.enable-sbc-xq" = true;
-      "bluez5.enable-msbc" = true;
+      "bluez5.enable-msbc" = false;
       "bluez5.enable-hw-volume" = true;
-      "bluez5.roles" = [
-        "hsp_hs"
-        "hsp_ag"
-        "hfp_hf"
-        "hfp_ag"
-      ];
+      "bluez5.roles" = [];  # Remove HSP/HFP roles
     };
   };
+
 
   # Automatic garbage collect
   nix.gc = {
