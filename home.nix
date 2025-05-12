@@ -91,6 +91,7 @@
     vesktop
     pavucontrol
 
+    vscode
     # system tools
     librewolf
     thunderbird
