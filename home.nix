@@ -94,6 +94,7 @@
     vscode
     # system tools
     librewolf
+    bitwarden-desktop
     thunderbird
     super-productivity
     bruno
